@@ -181,7 +181,7 @@ var configFases = [
   { linhas: 6, velocidade: 5.8, filasResistentes: 2 }
 ];
 
-var coresTijolos = [];  // preenchido no setup(), após p5 inicializar
+var coresTijolos = [];  
 
 var pontosPorLinha = [50, 40, 30, 20, 15, 10];
 var audioCtx = null;
@@ -316,9 +316,9 @@ function verificarColisoes() {
       var menorSob = min(sobEsquerda, sobDireita, sobCima, sobBaixo);
 
       if (menorSob === sobCima || menorSob === sobBaixo) {
-        bola.vel.y *= -1; // bateu pelo topo ou base do tijolo
+        bola.vel.y *= -1; 
       } else {
-        bola.vel.x *= -1; // bateu pela lateral do tijolo
+        bola.vel.x *= -1; 
       }
 
       colidiuEsseFrame = true;
@@ -432,13 +432,12 @@ function mostrarSobre() {
   noStroke();
 
   fill(100, 180, 255); textSize(14);
-  text('EQUIPE', width / 2, 125);
+  text('AUTOR', width / 2, 125);
   fill(255); textSize(20);
-  text('[Seu Nome]', width / 2, 158);
-  text('[Nome do colega]', width / 2, 188);
+  text('Bruno Guttervill', width / 2, 158);
 
   fill(160); textSize(13);
-  text('Trabalho final - Programacao Criativa', width / 2, 240);
+  text('Trabalho final - Web Development: HTML5 Canvas & Games', width / 2, 240);
 
   fill(100, 180, 255); textSize(14);
   text('SOBRE O JOGO', width / 2, 295);
