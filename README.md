@@ -78,4 +78,3 @@ breakout-plus/
 - [p5.js](https://p5js.org/) v1.9.0
 - JavaScript (ES6)
 - Web Audio API
-- HTML5
